@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Aldrich", serif;    
     line-height: 1.8em;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -145,6 +146,119 @@ a{
     transparent, #7cf03d);
 }
 
+.project-container{
+    display: flex;
+    margin-left: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 30px;
+    font-size: 50px;
+}
+
+.project-container button{
+    background-color: #7cf03d;
+    width: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #7cf03d;
+}
+
+.project-container button:hover{
+    background-color: #1f242d;
+    color: white;
+    transform: scale(1.1);
+    transition: .5s;
+    box-shadow: none;
+}
+
+.About h2{
+    box-shadow: 0px 0px 10px #7cf03d;
+    margin: 20px;
+    text-align: center;
+}
+
+.projects h2{
+    box-shadow: 0px 0px 10px #7cf03d;
+    margin: 20px;
+    text-align: center;
+}
+
+.skills h2{
+    box-shadow: 0px 0px 10px #7cf03d;
+    margin: 20px;
+    text-align: center;
+}
+
+.contact h2{
+    box-shadow: 0px 0px 10px #7cf03d;
+    margin: 20px;
+    text-align: center;
+}
+
+h4{
+    font-size: 20px;
+}
+
+.restaurant-web {
+    border: 6px groove yellowgreen;
+    height: 400px;
+    width: 300px;
+   text-align: center;
+   color: white;
+   padding: 100px;
+   margin-left: 30px;
+ background-image: url(/images/Screenshot\ \(7\).png);
+ background-size: cover;
+ border-radius: 20px;
+}
+
+
+.Blog-web{
+    border: 6px groove yellowgreen;
+    height: 400px;
+    width: 300px;
+    color: black;
+   text-align: center;
+   padding: 80px;
+   margin-left: 30px;
+ background-image: url(/images/img1.png);
+ background-size: cover;
+ border-radius: 20px;
+}
+
+.Ecommerce-web{
+    border: 6px groove yellowgreen;
+    height: 400px;
+    width: 300px;
+   text-align: center;
+   font-size: 10px;
+  color: black;
+   padding: 100px;
+   margin-left: 30px;
+ background-image: url(/images/img3.png);
+ background-size: cover;
+ border-radius: 20px;
+}
+
+.Event-web{
+    border: 6px groove yellowgreen;
+    height: 400px;
+    width: 300px;
+   text-align: center;
+   color: white;
+   padding: 100px;
+   margin-left: 30px;
+ background-image: url(/images/Screenshot\ \(11\).png);
+ background-size: cover;
+ border-radius: 20px;
+}
+
+.skill-container{
+    display: flex;
+    gap: 15px;
+    margin-left: 550px;
+    font-size: 30px;
+}
+
 .home-img .img-box .img-items{
     position: relative;
     width: 100%;
@@ -184,16 +298,31 @@ a{
     animation-delay: calc(.1s * var(--i));
 }
 
+.skill-cont{
+    font-size: xx-large;
+}
+
 @keyframes show-bars{
     100% {
          transform: translateY(0%);
     }
 }
 
+textarea{
+    height: 100px;
+    width: 250px;
+}
+
+
+
 form{
 text-align: center;
 border: 5px groove black;
 padding: 20px;
+}
+
+.name{
+    width: 20px;
 }
 
 .form-button{

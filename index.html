@@ -14,7 +14,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href=""><img src="logo.png" alt="" height="100px" style="color: azure;"></a>
+        <a href=""><img src="/images/logo.png" alt="" height="100px" style="color: azure;"></a>
         <ul>
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -37,7 +37,7 @@
     <section class="Home">
         <div class="home-info">
             <h1>Muhammad Asher</h1>
-            <h2>Front-End Developer</h2>
+            <h2 style="color: #7cf03d;">Front-End Developer</h2>
             <p>Passionate about creating dynamic web applications and designing efficient user experiences. Skilled in HTML, CSS, JavaScript, and learning modern frameworks. Dedicated to building impactful solutions through coding.</p>
             <div class="btn-sci">
                 <a href="#" class="btn">Download CV</a>
@@ -50,78 +50,74 @@
         <div class="home-img">
             <div class="img-box">
                 <div class="img-items">
-                    <img src="WhatsApp_Image_2025-01-20_at_00.38.52_57338ebe-removebg-preview.png" alt="Asher's Portrait">
+                    <img src="/images/WhatsApp_Image_2025-01-20_at_00.38.52_57338ebe-removebg-preview.png" alt="Asher's Portrait">
                 </div>
             </div>
         </div>
     </section>
 
     <section id="about" class="About">
-        <h2 style="text-align: center;">About Me</h2>
-        <p>I'm a student and aspiring Front-End Developer with a background in web development. I have built websites such as a fashion website and a home recipes website. I enjoy learning new technologies and applying them to real-world problems.</p>
+        <h2 >About Me</h2>
+        <p style="text-align: center;">I'm a student and aspiring Front-End Developer with a background in web development. I have built websites such as a fashion website and a home recipes website. I enjoy learning new technologies and applying them to real-world problems.</p>
     </section>
 
-    <section id="Projects">
-        <div>
-            <div>
-                <h2 style="text-align: center;">My Projects</h2>
-                <img src="" alt=" My Restaurant Website image">
+    <section id="Projects" class="projects">
+        <h2 >My Projects</h2>
+
+        <div class="project-container">
+
+            <div class="restaurant-web">
                 <h4>Restaurant Website</h4>
-                <p>Fully Responsive Restaurant Website by Using HTML5 & CSS3</p>
+                <!-- <p>Fully Responsive Restaurant Website by Using HTML5 & CSS3</p> -->
                 <button>View Project</button>
             </div>
         
-            <div>
-                <img src="" alt="My Blog Website image">
-                <h4>Blog Website</h4>
-                <p>Fully Responsive Blog Website by Using HTML5 & CSS3</p>
+            <div class="Blog-web">
+                <h4>Blog <br> Website</h4>
+                <!-- <p>Fully Responsive Blog Website by Using HTML5 & CSS3</p> -->
                 <button>View Project</button>
             </div>
         
-            <div>
-                <img src="" alt="My Ecommerce Website Image">
+            <div class="Ecommerce-web">
                 <h4>Ecommerce Website</h4>
-                <p>Fully Responsive Blog Website by Using HTML5 & CSS3</p>
+                <!-- <p>Fully Responsive Blog Website by Using HTML5 & CSS3</p> -->
                 <button>View Project</button>
             </div>
         
-        <div>
-            <img src="" alt="My Event Website Image">
+        <div class="Event-web">
                 <h4>Event Website</h4>
-                <p>Fully Responsive Event Website by Using HTML5 & CSS3</p>
+                <!-- <p>Fully Responsive Event Website by Using HTML5 & CSS3</p> -->
                 <button>View Project</button>
         </div>
         
         </div>
         </section>
 
-   <section id="Skills">
-        <div>
+   <section id="Skills" class="skills">
+
+    <h2>My Skills</h2>
+        <div class="skill-container">
             <div>
-                <h2 style="text-align: center;">My Skills</h2>
-            </div>
+        </div>
             <div>
-                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-html5 fa-xl" style="color: #7f771c;"></i>
                 <span>HTML5</span>
             </div>
             <div>
-                <i class="fa-brands fa-css3-alt"></i>
+                <i class="fa-brands fa-css3-alt fa-xl" style="color: #2f70a2;"></i>
                 <span>CSS3</span>
             </div>
             <div>
-                <i class="fa-brands fa-bootstrap"></i>
-                <span>Bootstrap</span>
+                <i class="fa-brands fa-bootstrap fa-xl" style="color: #1c23e3;"></i>
+                <span>Bootstrap</span> 
             </div>
             <div>
-                <i class="fa-brands fa-git"></i>
-                <span>git</span>
+                <i class="fa-brands fa-git-alt fa-xl" style="color: #f15233;"></i>
+                <span>Git</span>
             </div>
+
             <div>
-                <i class="fa-brands fa-js"></i>
-                <span>JavaScript</span>
-            </div>
-            <div>
-                <i class="fa-brands fa-figma"></i>
+                <i class="fa-brands fa-figma fa-xl" style="color: #c44080;"></i>
                 <span>Figma</span>
             </div>
         </div>
@@ -129,26 +125,17 @@
 
     <!-- Contact Section Start -->
      
-<section id="contact">
+<section id="contact" class="contact">
     <h2 style="text-align: center;">Contact</h2>
 
-    
     <form>
-        <div class="mb-3">
-          
-          <input type="text" placeholder="Email">
-
-        <div class="mb-3">
-          
-          <input type="password"  >
-        </div>
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <textarea name="Message"></textarea> <br>
+        <label> Name:</label>
+          <input type="text" placeholder="Username" required>
+        <label>Email:</label>
+          <input type="text" placeholder="Email" required>  <br> <br>
+       
+        <textarea name="Message" placeholder="Enter Your Message here..." ></textarea> 
+        <br> 
         <button class="form-button">Submit</button>
       </form>
     </section>

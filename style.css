@@ -5,6 +5,7 @@
     font-family: "Aldrich", serif;    
     line-height: 1.8em;
     scroll-behavior: smooth;
+    
 }
 
 body{
@@ -31,8 +32,9 @@ a{
 }
 
 .logo{
-    font-size: 30px;
-    font-weight: 700;
+    /* font-size: 50px; */
+    /* font-weight: 700; */
+    background-color: #7cf03d;
 }
 
 .navbar ul{
@@ -55,7 +57,9 @@ a{
     color: #7cf03d;
 }
 
-
+.para{
+    padding: 50px;
+}
 
 .Home{
     display: flex;
@@ -125,32 +129,21 @@ a{
 }
 
 .home-img .img-box{
-    position: relative;
-   width: 20vw;
-   height: 20vw;
-  background-color: #7cf03d;
-   border-radius: 50%;
-   padding: 5px;
+    width: 20vw;
+    height: 20vw;
+    background-color: #7cf03d;
+    border-radius: 50%;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.home-img .img-box::before
-.home-img .img-box::after {
-    content: '';
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background: conic-gradient(transparent, transparent, 
-    transparent, #7cf03d);
-}
-
 .project-container{
     display: flex;
-    margin-left: 250px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-left: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     gap: 30px;
     font-size: 50px;
 }
@@ -182,12 +175,6 @@ a{
     text-align: center;
 }
 
-.skills h2{
-    box-shadow: 0px 0px 10px #7cf03d;
-    margin: 20px;
-    text-align: center;
-}
-
 .contact h2{
     box-shadow: 0px 0px 10px #7cf03d;
     margin: 20px;
@@ -202,13 +189,13 @@ h4{
     border: 6px groove yellowgreen;
     height: 400px;
     width: 300px;
-   text-align: center;
-   color: white;
-   padding: 100px;
-   margin-left: 30px;
- background-image: url(/images/Screenshot\ \(7\).png);
- background-size: cover;
- border-radius: 20px;
+    text-align: center;
+    color: white;
+    padding: 100px;
+    margin-left: 30px;
+    background-image: url(/images/Screenshot\ \(7\).png);
+    background-size: cover;
+    border-radius: 20px;
 }
 
 
@@ -217,46 +204,65 @@ h4{
     height: 400px;
     width: 300px;
     color: black;
-   text-align: center;
-   padding: 80px;
-   margin-left: 30px;
- background-image: url(/images/img1.png);
- background-size: cover;
- border-radius: 20px;
+    text-align: center;
+    padding: 80px;
+    margin-left: 30px;
+    background-image: url(/images/img1.png);
+    background-size: cover;
+    border-radius: 20px;
 }
 
 .Ecommerce-web{
     border: 6px groove yellowgreen;
     height: 400px;
     width: 300px;
-   text-align: center;
-   font-size: 10px;
-  color: black;
-   padding: 100px;
-   margin-left: 30px;
- background-image: url(/images/img3.png);
- background-size: cover;
- border-radius: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: black;
+    padding: 100px;
+    margin-left: 30px;
+    background-image: url(/images/img3.png);
+    background-size: cover;
+    border-radius: 20px;
 }
 
 .Event-web{
     border: 6px groove yellowgreen;
     height: 400px;
     width: 300px;
-   text-align: center;
-   color: white;
-   padding: 100px;
-   margin-left: 30px;
- background-image: url(/images/Screenshot\ \(11\).png);
- background-size: cover;
- border-radius: 20px;
+    text-align: center;
+    color: white;
+    padding: 100px;
+    margin-left: 30px;
+    background-image: url(/images/Screenshot\ \(11\).png);
+    background-size: cover;
+    border-radius: 20px;
 }
 
 .skill-container{
     display: flex;
     gap: 15px;
-    margin-left: 550px;
     font-size: 30px;
+    margin-top: 50px;
+    margin-left: 650px;
+    margin-bottom: 5px;
+}
+
+.skills h2{
+    box-shadow: 0px 0px 10px #7cf03d;
+    margin: 20px;
+    text-align: center;
+}
+
+.skill-cont{
+    font-size: xx-large;
+}
+
+.fig{
+    gap: 15px;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: 800px;
 }
 
 .home-img .img-box .img-items{
@@ -292,14 +298,9 @@ h4{
     width: 100%;
     height: 100%;
     background: #1f242d;
-    /* border: 2px solid red; */
     transform: translateY(-100%);
     animation: show-bars .5s ease-in-out forwards;
     animation-delay: calc(.1s * var(--i));
-}
-
-.skill-cont{
-    font-size: xx-large;
 }
 
 @keyframes show-bars{
@@ -312,8 +313,6 @@ textarea{
     height: 100px;
     width: 250px;
 }
-
-
 
 form{
 text-align: center;

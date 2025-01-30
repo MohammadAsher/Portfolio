@@ -141,11 +141,14 @@ a{
 
 .project-container{
     display: flex;
-    margin-left: 200px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 320px;
     margin-top: 100px;
     margin-bottom: 100px;
     gap: 30px;
     font-size: 50px;
+    
 }
 
 .project-container button{
@@ -196,6 +199,7 @@ h4{
     background-image: url(/images/Screenshot\ \(7\).png);
     background-size: cover;
     border-radius: 20px;
+
 }
 
 
@@ -241,11 +245,13 @@ h4{
 
 .skill-container{
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     font-size: 30px;
     margin-top: 50px;
-    margin-left: 650px;
+    margin-left: 700px;
     margin-bottom: 5px;
+    align-content: center;
 }
 
 .skills h2{
